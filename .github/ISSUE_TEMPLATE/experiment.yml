@@ -1,0 +1,59 @@
+name: Experiment
+description: Plan and run a creative experiment (3×3×3)
+title: "[EXP] TOF-STATIC-PAIN - hook - v1"
+labels: ["experiment","planned"]
+
+body:
+  - type: dropdown
+    id: funnel
+    attributes:
+      label: Funnel
+      options: [TOF, MOF, BOF]
+    validations:
+      required: true
+
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options: [Static, Video, Carousel]
+    validations:
+      required: true
+
+  - type: dropdown
+    id: angle
+    attributes:
+      label: Angle
+      options: [Pain Point, Desire, Social Proof]
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: If we run this combo with this hook, what improves and why?
+    validations:
+      required: true
+
+  - type: textarea
+    id: creative_spec
+    attributes:
+      label: Creative spec
+      description: Copy/script, visuals, proof, offer, CTA
+    validations:
+      required: true
+
+  - type: textarea
+    id: success
+    attributes:
+      label: Success criteria
+      description: Kill / Iterate / Scale thresholds
+    validations:
+      required: true
+
+  - type: textarea
+    id: results
+    attributes:
+      label: Results (fill after launch)
+      description: Spend, impressions, CTR, hook rate, CPA/CAC, ROAS, notes
