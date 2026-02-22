@@ -1,0 +1,49 @@
+name: Creative Brief
+description: Request production of a creative concept
+title: "[BRIEF] Concept name"
+labels: ["creative-brief","planned"]
+
+body:
+  - type: textarea
+    id: concept
+    attributes:
+      label: Concept summary
+      description: One sentence idea
+    validations:
+      required: true
+
+  - type: textarea
+    id: hook
+    attributes:
+      label: Hook options
+      description: 2–3 opening lines
+    validations:
+      required: true
+
+  - type: dropdown
+    id: combo
+    attributes:
+      label: 3×3×3 combo
+      options:
+        - TOF Static Pain
+        - TOF Video Pain
+        - MOF Video Proof
+        - BOF Carousel Desire
+        - Other
+
+  - type: textarea
+    id: assets
+    attributes:
+      label: Assets needed
+      description: Footage, screenshots, UGC, product shots
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: Sizes, variations, copy versions
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints / compliance
