@@ -1,0 +1,42 @@
+name: Promote Pattern
+description: Turn a winning experiment into a reusable library pattern
+title: "[PATTERN] Name of pattern"
+labels: ["pattern-candidate"]
+
+body:
+  - type: input
+    id: experiment
+    attributes:
+      label: Experiment link
+      description: Link to the winning experiment issue
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it worked
+      description: Mechanism, emotion, proof type
+    validations:
+      required: true
+
+  - type: textarea
+    id: when
+    attributes:
+      label: When to use
+      description: Funnel stage, product type, conditions
+    validations:
+      required: true
+
+  - type: textarea
+    id: template
+    attributes:
+      label: Reusable template
+      description: Hook formulas, layout, script skeleton
+    validations:
+      required: true
+
+  - type: textarea
+    id: iteration
+    attributes:
+      label: Next variations to test
